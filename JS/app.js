@@ -23,6 +23,12 @@ toggleThemeBtns.forEach(btn => {
     })
 })
 
+// mahdi babaei (instead of html comments)
+window.addEventListener("load" , () => {
+    let theme = localStorage.getItem("theme")
+    document.documentElement.className = theme
+})
+
 // Nav Open & Close Mobile
 navOpenBtn.addEventListener("click",() => {
     nav.classList.remove("-right-64");
